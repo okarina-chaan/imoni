@@ -7,13 +7,13 @@ class RecipeJudge
 
   def result
     if fukushima?
-      "福島風"
+      "福島風芋煮の完成！"
     elsif miyagi?
-      "宮城風"
+      "宮城風芋煮の完成！"
     elsif yamagata?
-      "山形風"
+      "山形風芋煮の完成！"
     else
-      "失敗！"
+      "失敗！これは芋煮ではありません・・・"
     end
   end
 
