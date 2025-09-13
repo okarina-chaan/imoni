@@ -1,0 +1,38 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/rails
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - RAILS_ENV=development
+    command: >
+      bash -c "
+        bundle install &&
+        bundle exec rails db:prepare &&
+        bundle exec rails server -b 0.0.0.0 -p 3000
+      "
+    stdin_open: true
+    tty: true
+    working_dir: /rails
+    networks:
+      - imoni_network
+
+  # 開発環境用の追加サービス（必要に応じてコメントアウト解除）
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   networks:
+  #     - imoni_network
+
+volumes:
+  bundle_cache:
+
+networks:
+  imoni_network:
+    driver: bridge
