@@ -1,8 +1,9 @@
 <h1>お肉を選ぼう</h1>
+
 <%= form_with url: meat_path, method: :post do %>
-  <%= radio_button_tag :meat, "豚肉" %> 豚肉<br>
-  <%= radio_button_tag :meat, "牛肉" %> 牛肉<br>
-  <%= radio_button_tag :meat, "鶏肉" %> 鶏肉<br>
+  <% @meats.each do |meat| %>
+    <%= radio_button_tag :meat, meat %> <%= meat %><br>
+  <% end %>
   <%= submit_tag "次へ" %>
 <% end %>
 

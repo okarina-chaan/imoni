@@ -1,8 +1,8 @@
-<h1>調味料を選ぼう</h1>
-<%= form_with url: seasoning_path, method: :post do %>
-  <%= radio_button_tag :seasoning, "味噌" %> 味噌<br>
-  <%= radio_button_tag :seasoning, "醤油" %> 醤油<br>
-  <%= radio_button_tag :seasoning, "コンソメ" %> コンソメ<br>
-  <%= submit_tag "結果を見る" %>
-<% end %>
+<h1>野菜を選ぼう</h1>
 
+<%= form_with url: vegetables_path, method: :post do %>
+  <% @vegetables.each do |veg| %>
+    <%= check_box_tag "vegetables[]", veg %> <%= veg %><br>
+  <% end %>
+  <%= submit_tag "次へ" %>
+<% end %>
