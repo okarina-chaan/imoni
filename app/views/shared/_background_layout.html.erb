@@ -1,0 +1,12 @@
+<div class="relative min-h-screen">
+  <img src="<%= asset_path "imoninabe.jpg" %>"
+       alt="美味しそうな芋煮"
+       loading="lazy"
+       class="fixed inset-0 w-full h-full object-cover z-0" />
+  
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-0"></div>
+
+  <div class="relative z-10 min-h-screen py-8 px-4">
+    <%= yield %>
+  </div>
+</div>
