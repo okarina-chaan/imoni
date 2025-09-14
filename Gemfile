@@ -18,7 +18,6 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
-gem "tailwindcss-rails"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -40,6 +39,8 @@ gem "kamal", require: false
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", require: false
 
+gem "tailwindcss-rails"
+gem "tailwindcss-ruby", "3.4.17"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -58,7 +59,6 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem "foreman"
 end
 
 group :test do
