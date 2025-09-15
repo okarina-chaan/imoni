@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'imoninabe': "url('imoninabe.jpg')",
+      },
     },
   },
   plugins: [

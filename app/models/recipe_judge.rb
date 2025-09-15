@@ -13,7 +13,7 @@ class RecipeJudge
     elsif yamagata?
       "山形風芋煮の完成！"
     else
-      "失敗！これは芋煮ではありません・・・"
+      "失敗！"
     end
   end
 
