@@ -1,24 +1,35 @@
-# README
+# 芋煮アプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+具材を選んで芋煮を作るWebアプリケーションです。  
+ユーザーがお好みの野菜や具材を選択すると、その組み合わせから診断結果を表示し、X（Twitter）でシェアすることができます。  
+写真をお借りいたしました。[photoAC](https://www.photo-ac.com/)
 
-* Ruby version
+## 機能
 
-* System dependencies
+-    肉・野菜・調味料の選択
+-    選択した具材に基づく診断結果の表示
+-    X（Twitter）でのシェア機能
+-    レスポンシブデザイン
 
-* Configuration
+## 使用技術
 
-* Database creation
+-   **Ruby on Rails** - バックエンドフレームワーク
+-   **Tailwind CSS** - スタイリング
+-   **JavaScript** - フロントエンドの動的機能
 
-* Database initialization
+## 開発目的
 
-* How to run the test suite
+このアプリは以下の学習・検証目的で開発されました：
 
-* Services (job queues, cache servers, search engines, etc.)
+1.  **アプリのデプロイ経験**: 実際のWebアプリケーションをデプロイする経験を積む
+2.  **シェア機能の実装**: X（Twitter）シェア機能の実装方法を学習・検証
+3.  **機能別設計の考察**: 機能ごとに切り分けた設計パターンについて理解を深める
 
-* Deployment instructions
 
-* ...
+
+
+
+
+
