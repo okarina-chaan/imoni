@@ -12,6 +12,8 @@ class RecipeJudge
       "宮城風芋煮の完成！"
     elsif yamagata?
       "山形風芋煮の完成！"
+    elsif misoshiru?
+      "これは・・・味噌汁の完成！"
     else
       "失敗！"
     end
@@ -31,5 +33,8 @@ class RecipeJudge
 
   def yamagata?
     meat == "牛肉" && vegetables.include?("長ねぎ") && seasoning == "醤油"
+  end
+  def misoshiru?
+    meat.nil? && vegetables.present? && seasoning == "味噌"
   end
 end
