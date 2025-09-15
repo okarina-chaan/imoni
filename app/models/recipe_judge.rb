@@ -34,6 +34,7 @@ class RecipeJudge
   def yamagata?
     meat == "牛肉" && vegetables.include?("長ねぎ") && seasoning == "醤油"
   end
+
   def misoshiru?
     meat.nil? && vegetables.present? && seasoning == "味噌"
   end
