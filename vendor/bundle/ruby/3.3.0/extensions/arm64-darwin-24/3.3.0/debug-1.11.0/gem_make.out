@@ -1,0 +1,19 @@
+current directory: /Users/ogasawara/workspace/imoni/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+/Users/ogasawara/.rbenv/versions/3.3.9/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/ogasawara/workspace/imoni/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250916-13926-4db3ts sitelibdir\=./.gem.20250916-13926-4db3ts clean
+
+current directory: /Users/ogasawara/workspace/imoni/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250916-13926-4db3ts sitelibdir\=./.gem.20250916-13926-4db3ts
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/ogasawara/workspace/imoni/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250916-13926-4db3ts sitelibdir\=./.gem.20250916-13926-4db3ts install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20250916-13926-4db3ts/debug
+
+current directory: /Users/ogasawara/workspace/imoni/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250916-13926-4db3ts sitelibdir\=./.gem.20250916-13926-4db3ts clean
